@@ -5,8 +5,8 @@ import MenuPage from "../pages/MenuPage.vue";
 import NewsPage from "../pages/NewsPage.vue";
 
 const routes = [
-    {
-        path: "/",
+      {
+        path: "/news",
         name: "NewsPage",
         component: NewsPage, 
       },
