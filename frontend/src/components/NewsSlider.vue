@@ -6,7 +6,7 @@
 
 <script setup>
 
-import { nextTick, ref } from 'vue';
+import { ref } from 'vue';
 
 const slides = [
     "src/assets/images/slider/1.png",
@@ -20,7 +20,7 @@ const img = ref();
 let currentSlide = 0;
 let currentPath = ref(slides[currentSlide]);
 let timeout;
-const changeSlide = ()=>{
+const changeSlide = async ()=>{
     clearTimeout(timeout);
     img.value.style.opacity = 0;
     if (slides[currentSlide + 1]) {
@@ -29,9 +29,11 @@ const changeSlide = ()=>{
         currentSlide = 0;
     }
     timeout = setTimeout(()=>{
-        img.value.style.opacity = 1;
         currentPath.value = slides[currentSlide];
-    }, 500)
+        setTimeout(()=>{
+            img.value.style.opacity = 1;
+        },200)
+    }, 510)
 };
 
 </script>

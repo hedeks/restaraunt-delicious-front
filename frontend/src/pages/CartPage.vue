@@ -3,7 +3,7 @@
 
 <template>
   <div id="cart-wrapper">
-    
+    <h1>КОРЗИНА СТРАНИЦА</h1>
   </div>
 </template>
 

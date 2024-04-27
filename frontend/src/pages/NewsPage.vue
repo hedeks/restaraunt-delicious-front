@@ -1,13 +1,19 @@
-<script setup>
-import NewsSlider from '../components/NewsSlider.vue';
-</script>
-
 <template>
-  <div id="news-wrapper">
-      <NewsSlider/>
+  <div class="news-wrapper">
+    <NewsSlider />
+    <NewsBlock />
   </div>
 </template>
 
-<style scoped>
+<script setup>
+import NewsSlider from '../components/NewsSlider.vue';
+import NewsBlock from "../components/NewsBlock.vue";
+</script>
 
+<style scoped>
+.news-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
 </style>

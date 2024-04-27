@@ -32,6 +32,8 @@
 }
 .main {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 body {
   height: 100%;
@@ -41,5 +43,6 @@ body {
   letter-spacing: .2em;
   font-size: 14px;
   font-weight: 300;
+  line-height: 1.25;
 }
 </style>
