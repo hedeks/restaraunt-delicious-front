@@ -9,7 +9,7 @@
 
 <style scoped>
 .contacts-wrapper {
-  height: calc(100vh - 167px);
+  height: calc(100vh - 167px - 63px);
   display: flex;
   align-items: center;
   justify-content: center;
