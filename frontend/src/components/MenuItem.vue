@@ -44,32 +44,34 @@ const props = defineProps({
     gap: 10px;
     padding: 10px 20px;
     text-align: center;
-    background-color: #f8f9fa;
-    color: black;
+    background-color: black;
+    color: white;
     border: 1px solid white;
 }
 .item-img {
     width: auto;
+    max-width: 100%;
     height: 150px;
     object-fit: cover;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 20px;
     background-color: grey;
 }
 .item-button {
-    border: 1px solid black;
-    background-color: black;
-    color: white;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     border-radius: 35px;
     font-size: 12px;
     letter-spacing: 0;
     transition: all 0.3s ease;
     cursor: pointer;
+    text-align: center;
 }
 .item-button:hover {
-    color:black;
-    background-color: white;
-    border: 1px solid black;
+    color:white;
+    background-color: black;
+    border: 1px solid white;
 }
 </style>
